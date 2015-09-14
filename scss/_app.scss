@@ -8,14 +8,16 @@ body{
 }
 
 .menu{
-	background: $dark;
+	// background: $dark;
+	@include x-linear-gradient(to bottom,#AC37E5,#1266D7) ;
 	.list .item{
+		background: transparent;
 		border: none;
 		.item-content{
-			background: $dark;
+			background: transparent;
 			color: #fff;
 			&.activated{
-				background:  lighten($dark, 10%)
+				background:  rgba(#fff, .2)
 			}
 		}
 	}

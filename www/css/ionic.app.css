@@ -15692,14 +15692,20 @@ body * {
   background: #F2F2F2; }
 
 .menu {
-  background: #2A302F; }
+  background: -webkit-linear-gradient(top, #AC37E5, #1266D7);
+  background: -moz-linear-gradient(top, #AC37E5, #1266D7);
+  background: -ms-linear-gradient(top, #AC37E5, #1266D7);
+  background: -o-linear-gradient(top, #AC37E5, #1266D7);
+  background: linear-gradient(to bottom, #AC37E5, #1266D7);
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#AC37E5,endcolorstr=#1266D7,gradientType=0); }
   .menu .list .item {
+    background: transparent;
     border: none; }
     .menu .list .item .item-content {
-      background: #2A302F;
+      background: transparent;
       color: #fff; }
       .menu .list .item .item-content.activated {
-        background: #424b4a; }
+        background: rgba(255, 255, 255, 0.2); }
 
 .menu-content {
   box-shadow: none; }
