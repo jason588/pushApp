@@ -1,0 +1,85 @@
+<ion-view view-title="车丞">
+  <ion-content class="body-bg">
+    <ion-slide-box class="pic-slider" auto-play="true" does-continue="true" >
+        <ion-slide ng-repeat="slider in sliders">
+            <a class="slide" ng-href="{{slider.link}}"><img ng-src="{{slider.imgUrl}}"></a>
+        </ion-slide>
+    </ion-slide-box>
+    <div class="bar car-info">
+        <img src="img/logos/logo-06.png" alt="">
+        法拉利2015新款
+        <div class="right-icon">限行</div>
+    </div>
+    <h4 class="title">养车</h4>
+    <div class="grid-icons">
+        <ul class="grid-row">
+            <li class="col-xs-3">
+                <a href="#" class="icon"><i class="mdi mdi-car"></i></a>
+                <div class="label">洗车</div>
+            </li>
+            <li class="col-xs-3">
+                <a href="#" class="icon"><i class="mdi mdi-car-wash"></i></a>
+                <div class="label">大保养</div>
+            </li>
+            <li class="col-xs-3">
+                <a href="#" class="icon"><i class="mdi mdi-cart"></i></a>
+                <div class="label">小保养</div>
+            </li>
+            <li class="col-xs-3">
+                <a href="#" class="icon"><i class="mdi mdi-camera-timer"></i></a>
+                <div class="label">喷漆</div>
+            </li>
+            <li class="col-xs-3">
+                <a href="#" class="icon"><i class="mdi mdi-camera-iris"></i></a>
+                <div class="label">玻璃贴膜</div>
+            </li>
+            <li class="col-xs-3">
+                <a href="#" class="icon"><i class="mdi mdi-gas-station"></i></a>
+                <div class="label">封釉</div>
+            </li>
+            <li class="col-xs-3">
+                <a href="#" class="icon"><i class="mdi mdi-map"></i></a>
+                <div class="label">镀金贴膜</div>
+            </li>
+            <li class="col-xs-3">
+                <a href="#" class="icon"><i class="mdi mdi-martini"></i></a>
+                <div class="label">上门服务</div>
+            </li>
+        </ul>
+    </div>
+    <h4 class="title">用车</h4>
+    <div class="grid-icons">
+        <ul class="grid-row">
+            <li class="col-xs-3">
+            	<a href="#" class="icon"><i class="mdi mdi-book"></i></a>
+            	<div class="label">违章查询</div>
+            </li>
+            <li class="col-xs-3">
+            	<a href="#" class="icon"><i class="mdi mdi-motorbike"></i></a>
+            	<div class="label">ETC</div>
+            </li>
+            <li class="col-xs-3">
+            	<a href="#" class="icon"><i class="mdi mdi-account-multiple"></i></a>
+            	<div class="label">车友会</div>
+            </li>
+            <li class="col-xs-3">
+            	<a href="#" class="icon"><i class="mdi mdi-lightbulb"></i></a>
+            	<div class="label">用车知识</div>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div class="list">
+        <label class="item item-input">
+
+          <input type="text" placeholder="请输入验证码">
+          <button class="button button-balanced " ng-click="start()">
+            <span >获取验证码</span>
+          </button>
+          
+        </label>
+    </div>
+  </ion-content>
+</ion-view>

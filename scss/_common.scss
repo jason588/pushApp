@@ -1,0 +1,15 @@
+.bar-positive{
+	.button{
+		border-color: transparent;
+	}
+}
+.tabs-dark{
+	.tab-nav{
+		color: rgba(#fff, .8);
+		.tab-item{
+			&.tab-item-active{
+				color: $positive ;
+			}
+		} 
+	}
+}

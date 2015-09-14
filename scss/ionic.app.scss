@@ -1,0 +1,48 @@
+/*
+
+*/
+@import "setting/var-color";
+@import "setting/variable";
+
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #0EB767 !default;
+$calm:                            $blue !default;
+$balanced:                        #3DC031 !default;
+$energized:                       $deep-orange !default;
+$assertive:                       $red !default;
+$royal:                           $purple !default;
+$dark:                            #2A302F !default;
+
+$brand : 						  $positive !default;
+
+// 图标路径
+$ionicons-font-path: "../fonts" !default;
+
+$bg :  					#F2F2F2;
+
+$radius-base: 			3px;
+$bs : 					1px 0 2px rgba(#000,.2);
+$borderColor:			#EAEAEA;
+$border-amount: 		0% !default;
+$input-color-placeholder: darken(#fff, 20%);
+
+
+// 第三方
+@import "ionic/ionic";
+@import "bourbon/bourbon";
+@import "icons/md-icons/materialdesignicons";
+@import "icons/fontawesome/font-awesome";
+// Mixins
+@import "mixins/xmixins";
+@import "mixins/grid-framework";
+@import "mixins/mymixins";
+//settings
+@import "setting/colors";
+@import "setting/spacing";
+//App styles
+@import "common";
+@import "public";
+@import "app";
+

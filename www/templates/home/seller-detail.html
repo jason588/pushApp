@@ -1,0 +1,103 @@
+<ion-view view-title="商家详情">
+  <ion-content class="body-bg">
+    <ion-slide-box class="pic-slider" auto-play="true" does-continue="true" >
+        <ion-slide ng-repeat="slider in sliders">
+            <a class="slide" ng-href="{{slider.link}}"><img ng-src="{{slider.imgUrl}}"></a>
+        </ion-slide>
+    </ion-slide-box>
+    <div class="list">
+        <div class="item item-title">
+            <h2>
+                <i class="mdi mdi-store"></i>
+                牛逼汽车服务店
+            </h2>
+            <p class="t-sm mt" >开业时间：9:00 — 18:00</p>
+        </div>
+        <div class="item ph">  
+            <div class="icon-row row">
+                <a href="#" class="col">
+                    <i class="mdi mdi-wifi positive"></i>
+                    <span class="label">免费Wifi</span>
+                </a>
+                <a href="#" class="col">
+                    <i class="mdi mdi-cup-water positive"></i>
+                    <span class="label">免费开水</span>
+                </a>
+                <a href="#" class="col">
+                    <i class="mdi mdi-coffee positive"></i>
+                    <span class="label">休息室</span>
+                </a>
+                <a href="#" class="col">
+                    <i class="mdi mdi-credit-card positive"></i>
+                    <span class="label">支持刷卡</span>
+                </a>
+            </div>
+        </div>
+        <a class="item item-icon-left item-icon-right" >
+            <i class="icon mdi mdi-map-marker-radius"></i>
+            北京三里屯优衣库试衣间5号
+            <i class="icon ion-ios-arrow-right"></i>
+        </a>
+        <a class="item item-icon-left item-icon-right" tel="4005858888">
+            <i class="icon mdi mdi-phone"></i>
+            400-585-8888
+            <i class="icon ion-ios-arrow-right"></i>
+        </a>
+    </div>
+
+    <div class="list">
+        <div class="item" >
+            服务评价
+            <wf-star-rating rate="star3" class="mh+"></wf-star-rating>
+            <span class="rate t-sm">{{star3}} 分</span>
+
+        </div>
+        <div class="item">
+            <div class="time-info">2015-08-20 <span class="tel">129****0658</span></div>
+            <h2>这是评价内容</h2>
+            <p class="mt">购买服务 电脑洗车一次</p>
+        </div>
+        <div class="item">
+            <div class="time-info">2015-08-20 <span class="tel">129****0658</span></div>
+            <h2>OK</h2>
+            <p class="mt">购买服务 电脑洗车一次</p>
+        </div>
+        <a class="item more-data">
+            查看更多评价
+        </a>
+    </div>
+    <div class="list">
+        <div class="item item-title" >
+            全部服务
+
+        </div>
+        <div class="item">
+            <div class="icon-row row">
+                <a href="#" class="col">
+                    <i class="mdi mdi-arrange-bring-forward positive"></i>
+                    <span class="label">贴膜</span>
+                </a>
+                <a href="#" class="col">
+                    <i class="mdi mdi-car-wash positive"></i>
+                    <span class="label">洗车</span>
+                </a>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="mb">电脑洗车一次</h2>
+            <span class="price"><em>￥</em>188</span>
+            <em class="old-price mr++">￥998</em>
+        </div>
+        <div class="item">
+            <h2 class="mb">电脑洗车一次</h2>
+            <span class="price"><em>￥</em>299</span>
+            <em class="old-price mr++">￥1999</em>
+        </div>
+        <a class="item more-data">
+            查看更多
+            <i class="mdi mdi-chevron-down"></i>
+        </a>
+    </div>
+    
+  </ion-content>
+</ion-view>

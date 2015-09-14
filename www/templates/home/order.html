@@ -1,0 +1,45 @@
+<ion-view view-title="提交订单">
+  <ion-content class="body-bg order-wrap">
+	<div class="list no-top-border mb">
+
+		<div class="item item-divider">
+		电脑洗车一次
+		</div>
+
+		<div class="item">
+			单价<span class="item-note">15元</span>
+		</div>
+		<div class="item">
+			数量<span class="item-note">3</span>
+		</div>
+		<div class="item">
+			总价<span class="item-note">15元</span>
+		</div>
+		<a class="item item-icon-right">
+			优惠券
+			<span class="item-note">未使用</span>
+			<i class="icon ion-ios-arrow-right"></i>
+		</a>
+		<div class="item item-divider">
+			手机号码
+		</div>
+		<label class="item item-input">
+		   <input type="tel" placeholder="请输入您的手机号码">
+		</label>
+	</div>
+	<div class="row text-center return-type">
+		<div class="col"><i class="ion-android-checkmark-circle tc-green-500"></i> 随时可退</div>
+		<div class="col"><i class="ion-android-checkmark-circle tc-green-500"></i> 过期可退</div>
+		<div class="col"><i class="ion-android-checkmark-circle tc-green-500"></i> 先行赔付</div>
+	</div>
+	<div class="padding">
+		<button class="button button-block button-positive" ng-disabled="!agree">提交订单</button>
+	</div>
+	<div class="item-checkbox" >
+	    <label class="checkbox">
+	      <input type="checkbox" ng-model="agree">
+	    </label>
+	    <span class="tc-red-400">同意</span> 《你们的养车协议》
+	 </div>
+  </ion-content>
+</ion-view>

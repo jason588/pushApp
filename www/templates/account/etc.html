@@ -1,0 +1,30 @@
+<ion-view view-title="我的ECT">
+
+	<ion-content class="body-bg">
+		<ion-slide-box class="pic-slider" auto-play="true" does-continue="true" >
+		    <ion-slide ng-repeat="slider in sliders">
+		        <a class="slide" ng-href="{{slider.link}}"><img ng-src="{{slider.imgUrl}}"></a>
+		    </ion-slide>
+		</ion-slide-box>
+		<div class="list no-top-border">
+			<div class="item item-button-right">
+				<p>卡号：50442 5524 5585</p>
+				<p>余额：<span class="tc-deep-orange-500">￥323.00</span></p>
+				<button class="button button-positive">充值</button>
+			</div>
+		</div>
+		<h4 class="title">ETC消费记录</h4>
+		<div class="list">
+			<div class="item item-text-right">
+				<p>起点：南昌西 2015年12月1日 15:30</p>
+				<p>终点：萍乡北 2015年12月1日 18:30</p>
+			</div>
+			<div class="item item-text-right">
+				<p>消费地点：车保姆红谷店</p>
+				<p>消费时间：2015年10月29日 15:30</p>
+			</div>
+			
+		</div>
+		
+	</ion-content>
+</ion-view>

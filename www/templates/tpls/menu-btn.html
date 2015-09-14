@@ -1,0 +1,38 @@
+<div class="menu-btn" ng-class="{ 'open':isOpen , 'close':!isOpen }" ng-init="isOpen = false">
+  <ul class="menus">
+    <li>
+      <a href="#" >
+        <span>餐饮</span>
+        <i class="mdi mdi-car"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" >
+        <span>汽车</span>
+        <i class="mdi mdi-car"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" >
+        <span>娱乐</span>
+        <i class="mdi mdi-martini"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" >
+        <span>电影</span>
+        <i class="mdi mdi-film"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" >
+        <span>其它</span>
+        <i class="mdi mdi-dots-vertical"></i>
+      </a>
+    </li>
+  </ul>
+  <a href="#" class="btn" ng-click="isOpen = !isOpen">
+    <i class="mdi mdi-menu"></i>
+    <i class="mdi mdi-close"></i>
+  </a>
+</div>

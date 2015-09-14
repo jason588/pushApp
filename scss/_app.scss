@@ -1,0 +1,347 @@
+body{
+	*{
+		font-family: $ff;
+	}
+}
+.body-bg{
+	background: $bg;
+}
+
+.menu{
+	background: $dark;
+	.list .item{
+		border: none;
+		.item-content{
+			background: $dark;
+			color: #fff;
+			&.activated{
+				background:  lighten($dark, 10%)
+			}
+		}
+	}
+}
+.menu-content{
+	box-shadow: none; 
+}
+.bar.car-info{
+    position: relative;
+    box-shadow: $bs;
+    line-height: 34px;
+    font-size: 16px;
+    @include ellipsis;
+    img{
+        width: auto;
+        height: 100%
+    }
+    .right-icon{
+		@include right-middle(10px);
+		color: $deep-orange-400;
+		font-size: 14px;
+		padding: 3px 10px;
+		line-height: 1;
+		border:1px solid $deep-orange-400;
+    }
+}
+h4.title{
+	margin: 10px;
+	padding: 0 8px;
+	font-size: 16px;
+	line-height: 1;
+	border-left: 3px solid $brand;
+}
+
+.grid-icons{
+	background: #fff;
+	padding: $padding * 2;
+	box-shadow: $bs;
+	li{
+		margin-bottom: 10px;
+		text-align: center;
+		.icon{
+			display: inline-block;
+			color: #fff;
+			font-size: 24px;
+			@include circular(42px);
+			line-height: 45px;
+			.mdi{
+				display: inline-block;
+				@include size(24px);
+			}
+			img{
+				@include size(24px);
+			}
+		}
+		.label{
+			color: #666;
+			font-size: 12px;
+		}
+
+		&:nth-child(1) .icon{background-color: $green-500}
+		&:nth-child(2) .icon{background-color: $pink-400}
+		&:nth-child(3) .icon{background-color: $purple-400}
+		&:nth-child(4) .icon{background-color: $blue-400}
+		&:nth-child(5) .icon{background-color: $deep-orange-400}
+		&:nth-child(6) .icon{background-color: $blue-grey-500}
+		&:nth-child(7) .icon{background-color: $red-400}
+		&:nth-child(8) .icon{background-color: $indigo-500}
+	}
+}
+
+.ser-list{
+	margin-top: 10px;
+	.list{
+		margin-bottom: 10px;
+		.item{
+			border-color: $borderColor;
+			&.item-thumbnail-left{
+				padding:10px 110px 10px 80px;
+				min-height: 80px;
+				img:first-child{
+					@include thumb-size(60px);
+				}
+				h2{
+					margin: 8px 0;
+				}
+				p{
+					color: #999;
+					font-size: 12px;
+				}
+				.fr-box{
+					@include right-middle(10px);
+					max-width: 100px;
+					.star-label{
+						font-size: 14px;
+						line-height: 20px;
+						display: inline-block;
+						vertical-align: middle;
+					}
+				}
+				.distance{
+					color: #999;
+					font-size: 12px;
+					margin-top: 10px;
+					text-align: right;
+				}
+			}
+			&.item-button-right{
+				h2{
+					margin-bottom: 8px;
+				}
+				.buy{
+					color: #999;
+					font-size: 12px;
+					em{
+						font-style: oblique;
+						font-size: 14px;
+						margin-right: 5px;
+					}
+					span{
+						margin-right: 5px;
+					}
+
+					
+				}
+				.button{
+					height: 32px;
+					min-height: 30px;
+					font-size: 14px;
+					top: 50%;
+					right: 10px;
+					margin-top: -16px;
+				}
+			}
+			
+		}
+	}
+}
+
+.order-wrap{
+	.list{
+		.item{
+			.item-note{
+				color: #666;
+			}
+		}
+	}
+	
+	.item-checkbox{
+		position: relative;
+		padding-left: 40px;
+		.checkbox{
+			padding: 5px 0;
+		}
+	}
+	
+}
+.service-detail-wrap{
+	.title-bar{
+		box-shadow: $bs;
+		background: #fff;
+		.col{
+			padding: 0 5px;
+		}
+		h4{
+			line-height: 40px;
+			font-size: 16px;
+			margin: 0;
+			padding-left: 5px;
+		}
+		.collection{
+			border-left: 1px solid #ddd;
+			display: block;
+			text-align: center;
+			color: #999;
+			&.activated{
+				color: $brand;
+			}
+			.mdi{
+				font-size: 24px;
+			}
+			.label{
+				line-height: 1;
+				display: block;
+			}
+		}
+	}
+
+}
+.friend-wrap{
+	.cir{
+		@include circular(80px);
+	}
+	.icon-row{
+		i{
+			// font-size: 28px;
+		}
+	}
+}
+
+.price{
+	font-size: 20px;
+	color: $deep-orange;
+	em{
+		font-size: 14px;
+		margin-right: 5px;
+	}
+	+ .old-price{
+		color: #999;
+		margin-left: 10px;
+		text-decoration: line-through;
+		font-style: oblique;
+	}
+}
+
+.map-wrap{
+	@include size(100%);
+}
+
+.bar-subheader{
+	.title{
+		font-size: 16px;
+		color: #666;
+	}
+}
+
+.myset{
+	.list{
+		.item{
+			color: #686d76;
+			&.carinfo{
+				padding-left: 100px;
+			}
+			h2{
+				margin-bottom: 5px;
+			}
+			p{
+				color: #999;
+			}
+			&.item-icon-left{
+				.mdi:first-child{
+					font-size: 24px;
+					color: rgba($positive, .8);
+				}
+			}
+		}
+	}
+}
+
+
+.login{
+	@include x-linear-gradient(to bottom,$positive,#179DEF) ;
+	.login-wrap{
+		padding: 30px 20px 0;
+		.mdi-account-circle{
+			font-size: 24px * 3;
+			color: #fff;
+		}
+		.form-wrap{
+			padding: 0;
+			.col{
+				padding: 0;
+				margin-bottom: 20px;
+			}
+			.item-input{
+				background: transparent;
+				border:none;
+				border-bottom: 1px solid rgba(#fff, .8);
+				margin: 0 -1px;
+				padding-left: 0;
+				.input-label{
+					color: #fff;
+					width: 20%;
+					font-size: 14px;
+				}
+				input{
+					color: #fff;
+					font-size: 16px;
+					padding-right: 0;
+					// @include placeholder(#fff);
+				}
+				
+				
+			}
+		}
+		.btn-code{
+			background: rgba(#fff, .2);
+			border-color: transparent;
+			font-size: 14px;
+		}
+		.btn-submit{
+			background: #21D4DF;
+			border-color: transparent;
+			box-shadow: 0 3px 10px rgba(#000, .1);
+			color: #fff;
+			&.activated{
+				background:  rgba(#21D4DF, .8);
+				box-shadow: none;
+			}
+		}
+		.agreement{
+			font-size: 12px;
+			color: rgba(#fff, .5);
+			text-align: center;
+			margin-top: 30px;
+			a{
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+	
+}
+ 
+.text-wrap{
+	line-height: 1.8;
+	
+	background: #fff;
+	box-shadow: $bs;
+	h5{
+		font-size: 14px;
+		color: #333;
+	}
+	p{
+		font-size: 12px;
+		text-indent: 2em;
+		color: #666
+	}
+}
