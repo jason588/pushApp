@@ -1,6 +1,10 @@
 // Ionic Starter App
 
-angular.module('starter', ['ionic','ionic.service.core','ionic.service.push', 'starter.services', 'starter.controllers'])
+angular.module('starter', ['ionic',
+                          'ionic.service.core',
+                          'ionic.service.push', 
+                          'starter.services', 
+                          'starter.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -15,6 +19,14 @@ angular.module('starter', ['ionic','ionic.service.core','ionic.service.push', 's
     }
   });
 })
+
+.config(['$ionicAppProvider',function($ionicAppProvider) {
+    $ionicAppProvider.identify({
+      app_id: 'ba72c6cf',
+      api_key: '1d4f3e6249d177b9b87fea029cd4e0a5048c68c824f2c6a4',
+      dev_push: true
+    })
+}]) 
 
 .config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
 
