@@ -11,15 +11,21 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+    <script src="lib/angular-websocket/angular-websocket.min.js"></script>
 
-    <!-- cordova script (this will be a 404 during development) -->
+    <!-- cordova plugins -->
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/ionic-service-core/ionic-core.js"></script>
+    <script src="lib/ionic-service-push/ionic-push.js"></script>
     <script src="cordova.js"></script>
 
-    <!-- your app's js -->
+    <!-- My app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
-  </head>
+  
+
+</head>
   <body ng-controller="AppCtrl">
 
 
@@ -46,7 +52,7 @@
       <ion-side-menu side="right">
         <ion-content>
           <ion-list>
-            <ion-item ng-repeat="nav in navs" menu-close href="#/{{nav.link}}">
+            <ion-item ng-repeat="nav in navs" menu-close="" href="#/{{nav.link}}">
               {{nav.text}}
             </ion-item>
           </ion-list>
@@ -59,5 +65,5 @@
 
 
   </body>
-  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=fBINo1D4HnL1PZwvqh5CNohf"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=fBINo1D4HnL1PZwvqh5CNohf"></script>
 </html>
