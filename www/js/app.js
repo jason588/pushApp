@@ -3,6 +3,7 @@
 angular.module('starter', ['ionic', 
                           'starter.services', 
                           'starter.controllers',
+                          'ngCordova',
                           'ionic.service.core',
                           'ionic.service.push'])
 

@@ -126,6 +126,7 @@ angular.module('starter.controllers', [])
 
 
 .controller('pushCtrl', function($scope,$rootScope,$ionicUser,$ionicPush){
+
   
     $rootScope.$on('$cordovaPush:tokenReceived',function(event,data){
         alert('Success: ' + data.token);
@@ -147,17 +148,18 @@ angular.module('starter.controllers', [])
             $scope.identified = true;
             console.log('name: ' + user.name + "--- Id: " + user.user_id);
         });
-
+ 
     };
     $scope.pushRegister = function() {
         $ionicPush.register({
-            canShowAlert : true,
-            canSetBadge : true,
-            canPlaySound : true,
-            canRunActionsOnWake : true,
-            onNotification: function(notification) {
-                return true;
+            canShowAlert: true,
+            canSetBadge: true,
+            canPlaySound: true,
+            canRunActionsOnWake: true,
+            onNotification: function (notification) {
+              return true;
             }
         });
     }
 })
+
